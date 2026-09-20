@@ -1,0 +1,797 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="敲敲爱上你电视剧全集在线观看，剧情介绍，演员表，分集剧情，精彩花絮及观后感分享。">
+    <meta name="keywords" content="敲敲爱上你电视剧, 敲敲爱上你, 电视剧大全, 电视剧在线观看">
+    <title>敲敲爱上你电视剧-全集在线观看与剧情介绍</title>
+    <script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+    <style>
+        :root {
+            --primary-color: #e91e63;
+            --primary-hover: #c2185b;
+            --text-dark: #333333;
+            --text-gray: #666666;
+            --text-light: #999999;
+            --bg-light: #f9f9f9;
+            --white: #ffffff;
+            --border-radius: 8px;
+            --container-width: 1200px;
+            --spacing-unit: 16px;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+            line-height: 1.6;
+            color: var(--text-dark);
+            background-color: var(--bg-light);
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+            transition: color 0.3s;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        .container {
+            max-width: var(--container-width);
+            margin: 0 auto;
+            padding: 0 var(--spacing-unit);
+        }
+
+        /* Header */
+        header {
+            background-color: var(--white);
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .header-inner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 70px;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: var(--primary-color);
+            display: flex;
+            align-items: center;
+        }
+
+        .logo span {
+            margin-left: 8px;
+            font-size: 14px;
+            color: var(--text-gray);
+            font-weight: normal;
+        }
+
+        nav ul {
+            display: flex;
+            gap: 30px;
+        }
+
+        nav a {
+            font-size: 16px;
+            color: var(--text-dark);
+            font-weight: 500;
+        }
+
+        nav a:hover, nav a.active {
+            color: var(--primary-color);
+        }
+
+        .search-btn {
+            background: none;
+            border: none;
+            cursor: pointer;
+            font-size: 20px;
+            color: var(--text-dark);
+        }
+
+        /* Hero Section */
+        .hero {
+            position: relative;
+            height: 500px;
+            background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.6)), url('https://picsum.photos/seed/tvshow_hero/1920/1080.jpg') no-repeat center center/cover;
+            display: flex;
+            align-items: center;
+            color: var(--white);
+        }
+
+        .hero-content {
+            max-width: 800px;
+        }
+
+        .hero-tag {
+            background-color: var(--primary-color);
+            padding: 4px 12px;
+            border-radius: 4px;
+            font-size: 14px;
+            font-weight: bold;
+            display: inline-block;
+            margin-bottom: 16px;
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            margin-bottom: 16px;
+            line-height: 1.2;
+        }
+
+        .hero-meta {
+            display: flex;
+            gap: 20px;
+            font-size: 14px;
+            color: rgba(255,255,255,0.9);
+            margin-bottom: 24px;
+        }
+
+        .hero-desc {
+            font-size: 16px;
+            line-height: 1.8;
+            margin-bottom: 30px;
+            opacity: 0.95;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 32px;
+            border-radius: 30px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s;
+            text-align: center;
+        }
+
+        .btn-primary {
+            background-color: var(--primary-color);
+            color: var(--white);
+            box-shadow: 0 4px 15px rgba(233, 30, 99, 0.4);
+        }
+
+        .btn-primary:hover {
+            background-color: var(--primary-hover);
+            transform: translateY(-2px);
+        }
+
+        .btn-secondary {
+            background-color: rgba(255,255,255,0.2);
+            color: var(--white);
+            backdrop-filter: blur(5px);
+            margin-left: 10px;
+        }
+
+        .btn-secondary:hover {
+            background-color: rgba(255,255,255,0.3);
+        }
+
+        /* Quick Info Bar */
+        .info-bar {
+            background-color: var(--white);
+            padding: 30px 0;
+            margin-bottom: 40px;
+        }
+
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+            text-align: center;
+        }
+
+        .info-item h3 {
+            font-size: 24px;
+            color: var(--text-dark);
+            margin-bottom: 5px;
+        }
+
+        .info-item p {
+            color: var(--text-gray);
+            font-size: 14px;
+        }
+
+        /* Main Content Layout */
+        .main-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 30px;
+            margin-bottom: 60px;
+        }
+
+        /* Section Title */
+        .section-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 24px;
+            border-left: 4px solid var(--primary-color);
+            padding-left: 16px;
+        }
+
+        .section-title {
+            font-size: 22px;
+            font-weight: bold;
+        }
+
+        .section-link {
+            font-size: 14px;
+            color: var(--text-gray);
+        }
+
+        .section-link:hover {
+            color: var(--primary-color);
+        }
+
+        /* Episode List */
+        .episode-list {
+            background: var(--white);
+            border-radius: var(--border-radius);
+            padding: 20px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+        }
+
+        .episode-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 0;
+            border-bottom: 1px solid #eee;
+            transition: background 0.2s;
+        }
+
+        .episode-item:last-child {
+            border-bottom: none;
+        }
+
+        .episode-item:hover {
+            background-color: #fafafa;
+        }
+
+        .ep-info {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .ep-number {
+            width: 40px;
+            height: 40px;
+            background-color: var(--primary-color);
+            color: var(--white);
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: bold;
+            flex-shrink: 0;
+        }
+
+        .ep-title {
+            font-size: 16px;
+            font-weight: 500;
+        }
+
+        .ep-date {
+            font-size: 13px;
+            color: var(--text-light);
+        }
+
+        .btn-play-sm {
+            padding: 6px 16px;
+            font-size: 13px;
+            border-radius: 4px;
+        }
+
+        /* Sidebar */
+        aside .widget {
+            background: var(--white);
+            border-radius: var(--border-radius);
+            padding: 20px;
+            margin-bottom: 30px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+        }
+
+        .cast-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        .cast-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 80px;
+        }
+
+        .cast-avatar {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            overflow: hidden;
+            margin-bottom: 8px;
+            border: 2px solid #f0f0f0;
+        }
+
+        .cast-avatar img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .cast-name {
+            font-size: 13px;
+            color: var(--text-dark);
+            text-align: center;
+        }
+
+        .cast-role {
+            font-size: 12px;
+            color: var(--text-gray);
+        }
+
+        /* Synopsis Section */
+        .synopsis-section {
+            background-color: var(--white);
+            padding: 40px;
+            border-radius: var(--border-radius);
+            margin-bottom: 60px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+        }
+
+        .synopsis-content h2 {
+            font-size: 24px;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #eee;
+        }
+
+        .synopsis-text {
+            text-align: justify;
+            color: var(--text-gray);
+            line-height: 1.8;
+            margin-bottom: 20px;
+        }
+
+        .synopsis-tags {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+
+        .tag {
+            background-color: #f0f0f0;
+            color: var(--text-dark);
+            padding: 4px 12px;
+            border-radius: 4px;
+            font-size: 13px;
+        }
+
+        /* Gallery Grid */
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .gallery-item {
+            position: relative;
+            border-radius: var(--border-radius);
+            overflow: hidden;
+            aspect-ratio: 16/9;
+            cursor: pointer;
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s;
+        }
+
+        .gallery-item:hover img {
+            transform: scale(1.05);
+        }
+
+        .gallery-overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: linear-gradient(transparent, rgba(0,0,0,0.8));
+            padding: 20px 10px 10px;
+            color: white;
+            font-size: 14px;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #2c2c2c;
+            color: #b0b0b0;
+            padding: 60px 0 20px;
+            margin-top: auto;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr 1fr;
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+
+        .footer-brand h2 {
+            color: var(--white);
+            margin-bottom: 16px;
+        }
+
+        .footer-brand p {
+            font-size: 14px;
+            line-height: 1.8;
+        }
+
+        .footer-col h4 {
+            color: var(--white);
+            margin-bottom: 20px;
+            font-size: 16px;
+        }
+
+        .footer-col ul li {
+            margin-bottom: 10px;
+        }
+
+        .footer-col ul li a:hover {
+            color: var(--primary-color);
+        }
+
+        .footer-bottom {
+            border-top: 1px solid #3d3d3d;
+            padding-top: 20px;
+            text-align: center;
+            font-size: 13px;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .header-inner {
+                flex-wrap: wrap;
+                height: auto;
+                padding: 15px 0;
+            }
+
+            nav {
+                order: 3;
+                width: 100%;
+                margin-top: 15px;
+            }
+
+            nav ul {
+                gap: 15px;
+                justify-content: center;
+                flex-wrap: wrap;
+            }
+
+            .hero {
+                height: 400px;
+            }
+
+            .hero h1 {
+                font-size: 32px;
+            }
+
+            .info-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+
+            .main-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .footer-grid {
+                grid-template-columns: 1fr;
+                gap: 30px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container header-inner">
+            <a href="#" class="logo">
+                影视大全
+                <span>在线观看平台</span>
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="#" class="active">首页</a></li>
+                    <li><a href="#">电视剧</a></li>
+                    <li><a href="#">电影</a></li>
+                    <li><a href="#">综艺</a></li>
+                    <li><a href="#">动漫</a></li>
+                </ul>
+            </nav>
+            <button class="search-btn">🔍</button>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="container hero-content">
+                <span class="hero-tag">热门推荐</span>
+                <h1>敲敲爱上你</h1>
+                <div class="hero-meta">
+                    <span>类型：都市 / 爱情 / 喜剧</span>
+                    <span>主演：[主演A]、[主演B]、[主演C]</span>
+                    <span>更新：全24集</span>
+                </div>
+                <p class="hero-desc">
+                    《敲敲爱上你》讲述了性格迥异的两人因一次意外碰撞，从而展开了一段啼笑皆非又温暖治愈的爱情故事。在都市的喧嚣中，他们用独特的沟通方式，敲开了彼此的心扉，也重新定义了生活的意义。
+                </p>
+                <div class="hero-actions">
+                    <a href="#play" class="btn btn-primary">立即观看全集</a>
+                    <a href="#intro" class="btn btn-secondary">查看剧情介绍</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quick Info Bar -->
+        <div class="info-bar">
+            <div class="container info-grid">
+                <div class="info-item">
+                    <h3>24</h3>
+                    <p>集数总数</p>
+                </div>
+                <div class="info-item">
+                    <h3>2023</h3>
+                    <p>首播年份</p>
+                </div>
+                <div class="info-item">
+                    <h3>90分钟</h3>
+                    <p>单集时长</p>
+                </div>
+                <div class="info-item">
+                    <h3>8.5分</h3>
+                    <p>观众评分</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="main-grid">
+                <!-- Left Column: Episodes -->
+                <div class="content-col">
+                    <div class="section-header">
+                        <h2 class="section-title">更新列表</h2>
+                        <a href="#" class="section-link">查看更多 ></a>
+                    </div>
+
+                    <div class="episode-list">
+                        <div class="episode-item">
+                            <div class="ep-info">
+                                <div class="ep-number">24</div>
+                                <div>
+                                    <div class="ep-title">大结局：最好的我们</div>
+                                    <div class="ep-date">更新至第24集</div>
+                                </div>
+                            </div>
+                            <a href="#" class="btn btn-primary btn-play-sm">播放</a>
+                        </div>
+                        <div class="episode-item">
+                            <div class="ep-info">
+                                <div class="ep-number">23</div>
+                                <div>
+                                    <div class="ep-title">误会加深</div>
+                                    <div class="ep-date">更新至第23集</div>
+                                </div>
+                            </div>
+                            <a href="#" class="btn btn-primary btn-play-sm">播放</a>
+                        </div>
+                        <div class="episode-item">
+                            <div class="ep-info">
+                                <div class="ep-number">22</div>
+                                <div>
+                                    <div class="ep-title">雨中的告白</div>
+                                    <div class="ep-date">更新至第22集</div>
+                                </div>
+                            </div>
+                            <a href="#" class="btn btn-primary btn-play-sm">播放</a>
+                        </div>
+                        <div class="episode-item">
+                            <div class="ep-info">
+                                <div class="ep-number">21</div>
+                                <div>
+                                    <div class="ep-title">前任归来</div>
+                                    <div class="ep-date">更新至第21集</div>
+                                </div>
+                            </div>
+                            <a href="#" class="btn btn-primary btn-play-sm">播放</a>
+                        </div>
+                        <div class="episode-item">
+                            <div class="ep-info">
+                                <div class="ep-number">20</div>
+                                <div>
+                                    <div class="ep-title">家庭聚会</div>
+                                    <div class="ep-date">更新至第20集</div>
+                                </div>
+                            </div>
+                            <a href="#" class="btn btn-primary btn-play-sm">播放</a>
+                        </div>
+                        <div class="episode-item">
+                            <div class="ep-info">
+                                <div class="ep-number">19</div>
+                                <div>
+                                    <div class="ep-title">职场挑战</div>
+                                    <div class="ep-date">更新至第19集</div>
+                                </div>
+                            </div>
+                            <a href="#" class="btn btn-primary btn-play-sm">播放</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Column: Sidebar -->
+                <aside class="sidebar">
+                    <!-- Cast Widget -->
+                    <div class="widget">
+                        <h3 class="section-title" style="font-size: 18px; margin-bottom: 15px;">主要演员</h3>
+                        <div class="cast-list">
+                            <div class="cast-item">
+                                <div class="cast-avatar">
+                                    <img src="https://picsum.photos/seed/actor1/100/100" alt="演员头像">
+                                </div>
+                                <div class="cast-name">李明</div>
+                                <div class="cast-role">饰演 张敲敲</div>
+                            </div>
+                            <div class="cast-item">
+                                <div class="cast-avatar">
+                                    <img src="https://picsum.photos/seed/actor2/100/100" alt="演员头像">
+                                </div>
+                                <div class="cast-name">王芳</div>
+                                <div class="cast-role">饰演 苏暖暖</div>
+                            </div>
+                            <div class="cast-item">
+                                <div class="cast-avatar">
+                                    <img src="https://picsum.photos/seed/actor3/100/100" alt="演员头像">
+                                </div>
+                                <div class="cast-name">赵强</div>
+                                <div class="cast-role">饰演 陈默</div>
+                            </div>
+                            <div class="cast-item">
+                                <div class="cast-avatar">
+                                    <img src="https://picsum.photos/seed/actor4/100/100" alt="演员头像">
+                                </div>
+                                <div class="cast-name">刘敏</div>
+                                <div class="cast-role">饰演 林晓晓</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Ranking Widget -->
+                    <div class="widget">
+                        <h3 class="section-title" style="font-size: 18px; margin-bottom: 15px;">本周热门</h3>
+                        <ul style="font-size: 14px;">
+                            <li style="padding: 10px 0; border-bottom: 1px solid #eee; display: flex; justify-content: space-between;">
+                                <span>1. 独家记忆</span>
+                                <span style="color: var(--primary-color);">9.9分</span>
+                            </li>
+                            <li style="padding: 10px 0; border-bottom: 1px solid #eee; display: flex; justify-content: space-between;">
+                                <span>2. 他在逆光中告白</span>
+                                <span style="color: var(--primary-color);">9.8分</span>
+                            </li>
+                            <li style="padding: 10px 0; border-bottom: 1px solid #eee; display: flex; justify-content: space-between;">
+                                <span>3. 青春环游记</span>
+                                <span style="color: var(--primary-color);">9.7分</span>
+                            </li>
+                            <li style="padding: 10px 0; border-bottom: 1px solid #eee; display: flex; justify-content: space-between;">
+                                <span>4. 欢乐喜剧人</span>
+                                <span style="color: var(--primary-color);">9.6分</span>
+                            </li>
+                        </ul>
+                    </div>
+                </aside>
+            </div>
+
+            <!-- Synopsis Section -->
+            <section id="intro" class="synopsis-section">
+                <div class="synopsis-content">
+                    <h2>剧情简介</h2>
+                    <p class="synopsis-text">
+                        《敲敲爱上你》是一部融合了现代都市情感与轻喜剧元素的电视剧。故事的主角张敲敲（李明 饰）是一个性格直爽、甚至有些大大咧咧的敲击乐手，而苏暖暖（王芳 饰）则是一位严谨细致、追求完美的建筑师。两人原本生活在平行线上，直到一次因敲击乐器引发的误会，让他们意外地成为了邻居。
+                        在共同生活的日子里，张敲敲的乐观与不按常理出牌打破了苏暖暖的沉闷，而苏暖暖的理性与温柔也慢慢融化了张敲敲内心的防备。两人从最初的互相看不顺眼，到后来的互相欣赏，再到深陷爱河，中间经历了职场的竞争、家庭的阻力以及前任的纠缠等重重考验。
+                        本剧通过细腻的笔触描绘了当代年轻人在爱情与生活中的迷茫与坚持，最终告诉观众：真正的爱情往往不期而遇，只要勇敢去敲，幸福的大门就会为你打开。
+                    </p>
+                    <div class="synopsis-tags">
+                        <span class="tag">都市情感</span>
+                        <span class="tag">治愈系</span>
+                        <span class="tag">轻喜剧</span>
+                        <span class="tag">甜宠</span>
+                        <span class="tag">成长</span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Gallery Section -->
+            <div class="section-header">
+                <h2 class="section-title">精彩剧照</h2>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="https://picsum.photos/seed/still1/400/225" alt="剧照1">
+                    <div class="gallery-overlay">浪漫初遇</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://picsum.photos/seed/still2/400/225" alt="剧照2">
+                    <div class="gallery-overlay">甜蜜互动</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://picsum.photos/seed/still3/400/225" alt="剧照3">
+                    <div class="gallery-overlay">温馨时刻</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://picsum.photos/seed/still4/400/225" alt="剧照4">
+                    <div class="gallery-overlay">高燃时刻</div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <h2>影视大全</h2>
+                    <p>致力于为用户提供最全、最新、最流畅的在线影视观看体验。我们尊重版权，支持正版，带你领略影视世界的无限魅力。</p>
+                </div>
+                <div class="footer-col">
+                    <h4>网站导航</h4>
+                    <ul>
+                        <li><a href="#">电视剧</a></li>
+                        <li><a href="#">电影</a></li>
+                        <li><a href="#">综艺</a></li>
+                        <li><a href="#">动漫</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>帮助中心</h4>
+                    <ul>
+                        <li><a href="#">常见问题</a></li>
+                        <li><a href="#">意见反馈</a></li>
+                        <li><a href="#">版权声明</a></li>
+                        <li><a href="#">联系客服</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>关注我们</h4>
+                    <ul>
+                        <li><a href="#">微信公众号</a></li>
+                        <li><a href="#">新浪微博</a></li>
+                        <li><a href="#">粉丝群</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 影视大全在线观看平台 版权所有</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
