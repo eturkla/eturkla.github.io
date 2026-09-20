@@ -1,0 +1,1149 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="五通桥人才服务网 - 五通桥区官方权威人才招聘与求职平台。提供最新企业招聘信息、事业单位招考公告、人才政策解读及就业指导服务，致力于搭建五通桥区企业与人才的高效对接桥梁。">
+    <meta name="keywords" content="五通桥人才服务网, 五通桥招聘, 五通桥求职, 乐山人才网, 五通桥事业单位招聘, 五通桥企业招聘">
+    <title>五通桥人才服务网 - 五通桥区官方招聘求职与人才服务平台</title>
+    <script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+    <style>
+        :root {
+            --primary-color: #0056b3;
+            --secondary-color: #00a8cc;
+            --accent-color: #f0ad4e;
+            --text-dark: #333333;
+            --text-gray: #666666;
+            --bg-light: #f4f7f6;
+            --white: #ffffff;
+            --border-color: #e1e4e8;
+            --shadow-sm: 0 2px 4px rgba(0,0,0,0.05);
+            --shadow-md: 0 4px 12px rgba(0,0,0,0.08);
+            --radius: 8px;
+            --container-width: 1200px;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+            color: var(--text-dark);
+            line-height: 1.6;
+            background-color: var(--bg-light);
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+            transition: color 0.2s;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        /* Layout Utilities */
+        .container {
+            max-width: var(--container-width);
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .section {
+            padding: 60px 0;
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .section-header h2 {
+            font-size: 28px;
+            color: var(--primary-color);
+            margin-bottom: 10px;
+            position: relative;
+            display: inline-block;
+        }
+
+        .section-header h2::after {
+            content: '';
+            display: block;
+            width: 60px;
+            height: 3px;
+            background-color: var(--secondary-color);
+            margin: 10px auto 0;
+            border-radius: 2px;
+        }
+
+        .section-header p {
+            color: var(--text-gray);
+            font-size: 16px;
+        }
+
+        /* Header */
+        header {
+            background-color: var(--white);
+            box-shadow: var(--shadow-sm);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .top-bar {
+            background-color: #f8f9fa;
+            border-bottom: 1px solid var(--border-color);
+            font-size: 13px;
+            color: var(--text-gray);
+            padding: 8px 0;
+        }
+
+        .top-bar .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .top-info span {
+            margin-right: 15px;
+        }
+
+        .main-header {
+            padding: 15px 0;
+        }
+
+        .main-header .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: var(--primary-color);
+            display: flex;
+            align-items: center;
+        }
+
+        .logo span {
+            color: var(--secondary-color);
+        }
+
+        .nav-menu {
+            display: flex;
+            gap: 30px;
+        }
+
+        .nav-menu a {
+            font-weight: 500;
+            color: var(--text-dark);
+            padding: 10px 0;
+            position: relative;
+        }
+
+        .nav-menu a:hover, .nav-menu a.active {
+            color: var(--primary-color);
+        }
+
+        .nav-menu a.active::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background-color: var(--primary-color);
+        }
+
+        .header-actions {
+            display: flex;
+            gap: 15px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 10px 24px;
+            border-radius: var(--radius);
+            font-size: 14px;
+            font-weight: 500;
+            cursor: pointer;
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+
+        .btn-outline {
+            border: 1px solid var(--primary-color);
+            color: var(--primary-color);
+            background: transparent;
+        }
+
+        .btn-outline:hover {
+            background-color: var(--primary-color);
+            color: var(--white);
+        }
+
+        .btn-primary {
+            background-color: var(--primary-color);
+            color: var(--white);
+            border: 1px solid var(--primary-color);
+        }
+
+        .btn-primary:hover {
+            background-color: #004494;
+            border-color: #004494;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+            color: var(--white);
+            padding: 80px 0 100px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -20%;
+            width: 800px;
+            height: 800px;
+            background: rgba(255,255,255,0.1);
+            border-radius: 50%;
+        }
+
+        .hero-content {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            position: relative;
+            z-index: 1;
+        }
+
+        .hero-text {
+            flex: 1;
+            padding-right: 50px;
+        }
+
+        .hero-text h1 {
+            font-size: 42px;
+            margin-bottom: 20px;
+            line-height: 1.2;
+        }
+
+        .hero-text p {
+            font-size: 18px;
+            opacity: 0.9;
+            margin-bottom: 30px;
+        }
+
+        .hero-stats {
+            display: flex;
+            gap: 40px;
+            margin-top: 40px;
+            padding-top: 30px;
+            border-top: 1px solid rgba(255,255,255,0.2);
+        }
+
+        .stat-item h3 {
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .stat-item span {
+            font-size: 14px;
+            opacity: 0.8;
+        }
+
+        .hero-search {
+            flex: 0 0 400px;
+            background: var(--white);
+            padding: 30px;
+            border-radius: var(--radius);
+            box-shadow: var(--shadow-md);
+            color: var(--text-dark);
+        }
+
+        .search-tabs {
+            display: flex;
+            border-bottom: 1px solid var(--border-color);
+            margin-bottom: 20px;
+        }
+
+        .search-tab {
+            flex: 1;
+            text-align: center;
+            padding: 12px;
+            cursor: pointer;
+            font-weight: 500;
+            color: var(--text-gray);
+            border-bottom: 2px solid transparent;
+        }
+
+        .search-tab.active {
+            color: var(--primary-color);
+            border-bottom-color: var(--primary-color);
+        }
+
+        .search-form-group {
+            margin-bottom: 15px;
+        }
+
+        .search-form-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-size: 14px;
+            color: var(--text-gray);
+        }
+
+        .search-input-wrapper {
+            position: relative;
+        }
+
+        .search-input-wrapper input {
+            width: 100%;
+            padding: 12px 15px;
+            border: 1px solid var(--border-color);
+            border-radius: var(--radius);
+            font-size: 14px;
+        }
+
+        .search-input-wrapper select {
+            width: 100%;
+            padding: 12px 15px;
+            border: 1px solid var(--border-color);
+            border-radius: var(--radius);
+            font-size: 14px;
+            background-color: var(--white);
+            appearance: none;
+        }
+
+        .search-btn {
+            width: 100%;
+            padding: 14px;
+            background-color: var(--primary-color);
+            color: var(--white);
+            border: none;
+            border-radius: var(--radius);
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .search-btn:hover {
+            background-color: #004494;
+        }
+
+        /* Quick Links */
+        .quick-links {
+            background-color: var(--white);
+            margin-top: -40px;
+            border-radius: var(--radius);
+            padding: 25px;
+            box-shadow: var(--shadow-md);
+            position: relative;
+            z-index: 2;
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            gap: 20px;
+        }
+
+        .quick-link-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            padding: 15px;
+            border-radius: var(--radius);
+            transition: background 0.3s;
+        }
+
+        .quick-link-item:hover {
+            background-color: var(--bg-light);
+        }
+
+        .quick-icon {
+            width: 48px;
+            height: 48px;
+            background-color: rgba(0, 86, 179, 0.1);
+            color: var(--primary-color);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+
+        .quick-link-item span {
+            font-size: 14px;
+            font-weight: 500;
+        }
+
+        /* Latest Jobs Section */
+        .job-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 25px;
+        }
+
+        .job-card {
+            background: var(--white);
+            border-radius: var(--radius);
+            padding: 25px;
+            box-shadow: var(--shadow-sm);
+            border: 1px solid var(--border-color);
+            transition: transform 0.3s, box-shadow 0.3s;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .job-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-md);
+            border-color: var(--secondary-color);
+        }
+
+        .job-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 4px;
+            height: 100%;
+            background-color: var(--secondary-color);
+        }
+
+        .job-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 15px;
+        }
+
+        .company-name {
+            font-weight: bold;
+            font-size: 16px;
+            color: var(--text-dark);
+        }
+
+        .job-type {
+            font-size: 12px;
+            padding: 3px 8px;
+            border-radius: 4px;
+            background-color: #e8f4ff;
+            color: var(--primary-color);
+        }
+
+        .job-title {
+            font-size: 18px;
+            margin-bottom: 10px;
+            color: var(--primary-color);
+        }
+
+        .job-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-bottom: 20px;
+        }
+
+        .job-tag {
+            font-size: 12px;
+            color: var(--text-gray);
+            background-color: var(--bg-light);
+            padding: 4px 8px;
+            border-radius: 4px;
+        }
+
+        .job-footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-top: 15px;
+            border-top: 1px solid var(--border-color);
+            font-size: 13px;
+            color: var(--text-gray);
+        }
+
+        .salary {
+            color: var(--accent-color);
+            font-weight: bold;
+            font-size: 16px;
+        }
+
+        /* Govt Jobs Banner */
+        .gov-banner {
+            background: linear-gradient(to right, #2c3e50, #4ca1af);
+            color: var(--white);
+            padding: 40px 0;
+            margin: 60px 0;
+        }
+
+        .gov-banner-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .gov-info h3 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .gov-list {
+            margin-top: 20px;
+        }
+
+        .gov-list li {
+            margin-bottom: 8px;
+            display: flex;
+            align-items: center;
+        }
+
+        .gov-list li::before {
+            content: '•';
+            color: var(--accent-color);
+            margin-right: 10px;
+            font-size: 20px;
+        }
+
+        /* Services Section */
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+        }
+
+        .service-card {
+            text-align: center;
+            padding: 30px 20px;
+            background: var(--white);
+            border-radius: var(--radius);
+            border: 1px solid var(--border-color);
+        }
+
+        .service-icon {
+            font-size: 40px;
+            margin-bottom: 20px;
+            color: var(--secondary-color);
+        }
+
+        .service-card h3 {
+            margin-bottom: 15px;
+            font-size: 18px;
+        }
+
+        .service-card p {
+            color: var(--text-gray);
+            font-size: 14px;
+            margin-bottom: 20px;
+        }
+
+        /* FAQ Section */
+        .faq-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .faq-item {
+            background: var(--white);
+            border-radius: var(--radius);
+            margin-bottom: 15px;
+            box-shadow: var(--shadow-sm);
+            overflow: hidden;
+        }
+
+        .faq-question {
+            padding: 20px;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-weight: 500;
+            background-color: var(--white);
+            transition: background 0.3s;
+        }
+
+        .faq-question:hover {
+            background-color: #f9f9f9;
+        }
+
+        .faq-answer {
+            padding: 0 20px 20px;
+            color: var(--text-gray);
+            font-size: 14px;
+            display: none;
+            border-top: 1px solid #f0f0f0;
+            padding-top: 15px;
+        }
+
+        .faq-item.active .faq-answer {
+            display: block;
+        }
+
+        .faq-item.active .faq-question {
+            color: var(--primary-color);
+        }
+
+        .icon-plus {
+            transition: transform 0.3s;
+        }
+
+        .faq-item.active .icon-plus {
+            transform: rotate(45deg);
+        }
+
+        /* Footer */
+        footer {
+            background-color: #2b2b2b;
+            color: #ccc;
+            padding: 60px 0 20px;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+
+        .footer-col h4 {
+            color: var(--white);
+            font-size: 18px;
+            margin-bottom: 25px;
+            position: relative;
+            padding-bottom: 15px;
+        }
+
+        .footer-col h4::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 40px;
+            height: 2px;
+            background-color: var(--secondary-color);
+        }
+
+        .footer-links li {
+            margin-bottom: 12px;
+        }
+
+        .footer-links a:hover {
+            color: var(--secondary-color);
+            padding-left: 5px;
+        }
+
+        .contact-info li {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 15px;
+            font-size: 14px;
+        }
+
+        .contact-info li span {
+            margin-right: 10px;
+            color: var(--secondary-color);
+        }
+
+        .footer-bottom {
+            border-top: 1px solid #3d3d3d;
+            padding-top: 20px;
+            text-align: center;
+            font-size: 13px;
+        }
+
+        /* Responsive */
+        @media (max-width: 992px) {
+            .hero-content {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .hero-text {
+                padding-right: 0;
+                margin-bottom: 40px;
+            }
+
+            .hero-search {
+                flex: 1;
+            }
+
+            .hero-stats {
+                justify-content: center;
+            }
+
+            .quick-links {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .nav-menu {
+                display: none;
+            }
+
+            .section-header h2 {
+                font-size: 24px;
+            }
+
+            .hero-text h1 {
+                font-size: 32px;
+            }
+
+            .quick-links {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .search-tabs {
+                flex-direction: column;
+            }
+            
+            .gov-banner-content {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="container">
+            <div class="top-info">
+                <span>欢迎访问五通桥人才服务网</span>
+                <span>客服热线：0833-12333</span>
+            </div>
+            <div class="top-links">
+                <a href="#">登录</a>
+                <span style="margin: 0 5px;">|</span>
+                <a href="#">注册</a>
+                <span style="margin: 0 5px;">|</span>
+                <a href="#">帮助中心</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header>
+        <div class="container main-header">
+            <a href="#" class="logo">五通桥<span>人才服务网</span></a>
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="#" class="active">首页</a></li>
+                    <li><a href="#">企业招聘</a></li>
+                    <li><a href="#">个人求职</a></li>
+                    <li><a href="#">事业单位</a></li>
+                    <li><a href="#">人才政策</a></li>
+                    <li><a href="#">培训考试</a></li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <a href="#" class="btn btn-outline">企业登录</a>
+                <a href="#" class="btn btn-primary">个人登录</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container hero-content">
+            <div class="hero-text">
+                <h1>汇聚五通桥智慧，共创区域发展</h1>
+                <p>专业的区域人才服务平台，为企业和求职者提供高效、精准的对接服务。掌握最新招聘动态，开启您的职业新篇章。</p>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <h3>500+</h3>
+                        <span>入驻企业</span>
+                    </div>
+                    <div class="stat-item">
+                        <h3>12000+</h3>
+                        <span>在招职位</span>
+                    </div>
+                    <div class="stat-item">
+                        <h3>8500+</h3>
+                        <span>注册人才</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-search">
+                <div class="search-tabs">
+                    <div class="search-tab active" data-type="job">找工作</div>
+                    <div class="search-tab" data-type="resume">找人才</div>
+                </div>
+                <form id="searchForm">
+                    <div class="search-form-group">
+                        <label>职位名称 / 关键词</label>
+                        <div class="search-input-wrapper">
+                            <input type="text" placeholder="请输入您感兴趣的职位" name="keyword">
+                        </div>
+                    </div>
+                    <div class="search-form-group">
+                        <label>工作地点</label>
+                        <div class="search-input-wrapper">
+                            <select name="location">
+                                <option value="">全区域</option>
+                                <option value="jiezi">乐山市五通桥区（桥沟镇）</option>
+                                <option value="xiushan">乐山市五通桥区（杨柳镇）</option>
+                                <option value="yongchuan">乐山市五通桥区（牛华镇）</option>
+                            </select>
+                        </div>
+                    </div>
+                    <button type="submit" class="search-btn">立即搜索</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick Links -->
+    <div class="container">
+        <div class="quick-links">
+            <a href="#" class="quick-link-item">
+                <div class="quick-icon">💼</div>
+                <span>企业招聘</span>
+            </a>
+            <a href="#" class="quick-link-item">
+                <div class="quick-icon">👤</div>
+                <span>个人求职</span>
+            </a>
+            <a href="#" class="quick-link-item">
+                <div class="quick-icon">🏛️</div>
+                <span>事业单位</span>
+            </a>
+            <a href="#" class="quick-link-item">
+                <div class="quick-icon">🎓</div>
+                <span>高校毕业生</span>
+            </a>
+            <a href="#" class="quick-link-item">
+                <div class="quick-icon">📜</div>
+                <span>人才政策</span>
+            </a>
+            <a href="#" class="quick-link-item">
+                <div class="quick-icon">🛠️</div>
+                <span>技能培训</span>
+            </a>
+        </div>
+    </div>
+
+    <!-- Latest Jobs Section -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>最新招聘职位</h2>
+                <p>五通桥区企事业单位最新发布的热门职位，抢先一步投递简历</p>
+            </div>
+            <div class="job-grid">
+                <!-- Job Card 1 -->
+                <article class="job-card">
+                    <div class="job-header">
+                        <div class="company-name">四川某化工新材料有限公司</div>
+                        <span class="job-type">急聘</span>
+                    </div>
+                    <h3 class="job-title">高级工艺工程师</h3>
+                    <div class="job-tags">
+                        <span class="job-tag">化工</span>
+                        <span class="job-tag">五通桥</span>
+                        <span class="job-tag">本科</span>
+                    </div>
+                    <div class="job-footer">
+                        <span class="salary">8k-12k</span>
+                        <span>发布于 2小时前</span>
+                    </div>
+                </article>
+
+                <!-- Job Card 2 -->
+                <article class="job-card">
+                    <div class="job-header">
+                        <div class="company-name">五通桥区第一人民医院</div>
+                        <span class="job-type">医院</span>
+                    </div>
+                    <h3 class="job-title">临床医师</h3>
+                    <div class="job-tags">
+                        <span class="job-tag">医疗</span>
+                        <span class="job-tag">五通桥</span>
+                        <span class="job-tag">硕士</span>
+                    </div>
+                    <div class="job-footer">
+                        <span class="salary">面议</span>
+                        <span>发布于 昨天</span>
+                    </div>
+                </article>
+
+                <!-- Job Card 3 -->
+                <article class="job-card">
+                    <div class="job-header">
+                        <div class="company-name">乐山五通桥区教育局</div>
+                        <span class="job-type">编制</span>
+                    </div>
+                    <h3 class="job-title">中小学教师（编制内）</h3>
+                    <div class="job-tags">
+                        <span class="job-tag">教师</span>
+                        <span class="job-tag">五通桥</span>
+                        <span class="job-tag">应届生</span>
+                    </div>
+                    <div class="job-footer">
+                        <span class="salary">年薪8-15万</span>
+                        <span>发布于 3天前</span>
+                    </div>
+                </article>
+
+                <!-- Job Card 4 -->
+                <article class="job-card">
+                    <div class="job-header">
+                        <div class="company-name">四川某精密制造厂</div>
+                        <span class="job-type">普工</span>
+                    </div>
+                    <h3 class="job-title">数控操作员</h3>
+                    <div class="job-tags">
+                        <span class="job-tag">机械</span>
+                        <span class="job-tag">五通桥</span>
+                        <span class="job-tag">经验</span>
+                    </div>
+                    <div class="job-footer">
+                        <span class="salary">5k-7k</span>
+                        <span>发布于 5小时前</span>
+                    </div>
+                </article>
+
+                <!-- Job Card 5 -->
+                <article class="job-card">
+                    <div class="job-header">
+                        <div class="company-name">五通桥区公共就业服务中心</div>
+                        <span class="job-type">政府</span>
+                    </div>
+                    <h3 class="job-title">招聘专干</h3>
+                    <div class="job-tags">
+                        <span class="job-tag">行政</span>
+                        <span class="job-tag">五通桥</span>
+                        <span class="job-tag">大专</span>
+                    </div>
+                    <div class="job-footer">
+                        <span class="salary">3500-4500</span>
+                        <span>发布于 1周前</span>
+                    </div>
+                </article>
+
+                <!-- Job Card 6 -->
+                <article class="job-card">
+                    <div class="job-header">
+                        <div class="company-name">乐山五通桥区某连锁餐饮</div>
+                        <span class="job-type">全职</span>
+                    </div>
+                    <h3 class="job-title">店长/储备干部</h3>
+                    <div class="job-tags">
+                        <span class="job-tag">餐饮</span>
+                        <span class="job-tag">五通桥</span>
+                        <span class="job-tag">不限</span>
+                    </div>
+                    <div class="job-footer">
+                        <span class="salary">4k-6k</span>
+                        <span>发布于 1天前</span>
+                    </div>
+                </article>
+            </div>
+            <div style="text-align: center; margin-top: 40px;">
+                <a href="#" class="btn btn-outline">查看更多职位</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Government/Institutional Banner -->
+    <section class="gov-banner">
+        <div class="container gov-banner-content">
+            <div class="gov-info">
+                <h3>事业单位招考公告</h3>
+                <ul class="gov-list">
+                    <li>2024年五通桥区公开招聘事业单位工作人员公告</li>
+                    <li>五通桥区2024年中小学教师公开招聘补录公告</li>
+                    <li>乐山市五通桥区综合行政执法大队招聘劳务派遣人员</li>
+                </ul>
+            </div>
+            <div class="gov-cta">
+                <a href="#" class="btn btn-primary" style="background-color: var(--accent-color); border-color: var(--accent-color); color: #333;">查看公告详情</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="section" style="background-color: var(--white);">
+        <div class="container">
+            <div class="section-header">
+                <h2>人才服务项目</h2>
+                <p>全方位的人才服务支持，助力个人职业发展与企业人力资源优化</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">📄</div>
+                    <h3>档案管理</h3>
+                    <p>提供人事档案接收、转递、存放及档案信息查询服务。</p>
+                    <a href="#" style="color: var(--primary-color); font-size: 14px; font-weight: 500;">了解详情 &rarr;</a>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🧪</div>
+                    <h3>技能鉴定</h3>
+                    <p>组织开展职业技能等级认定，提升劳动者就业竞争力。</p>
+                    <a href="#" style="color: var(--primary-color); font-size: 14px; font-weight: 500;">了解详情 &rarr;</a>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🎓</div>
+                    <h3>就业见习</h3>
+                    <p>为高校毕业生提供就业见习岗位，积累实践经验。</p>
+                    <a href="#" style="color: var(--primary-color); font-size: 14px; font-weight: 500;">了解详情 &rarr;</a>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">⚖️</div>
+                    <h3>人才评价</h3>
+                    <p>开展高层次人才及急需紧缺人才认定工作。</p>
+                    <a href="#" style="color: var(--primary-color); font-size: 14px; font-weight: 500;">了解详情 &rarr;</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>常见问题解答</h2>
+                <p>关于五通桥人才服务网使用及政策方面的疑问</p>
+            </div>
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>在五通桥人才服务网注册需要收费吗？</span>
+                        <span class="icon-plus">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        本网站提供的个人注册、简历创建、职位搜索和投递等基础服务均为免费。企业发布招聘信息根据套餐不同可能需要支付相应费用，具体请咨询客服。
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>如何查询五通桥区事业单位的编制岗位？</span>
+                        <span class="icon-plus">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        您可以关注本网站首页的“事业单位”栏目，或直接点击“人才政策”板块，所有官方发布的招考公告、岗位表和报名入口都会第一时间更新。
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>人事档案可以在哪里存放？</span>
+                        <span class="icon-plus">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        符合条件的五通桥区户籍人员及在五通桥区就业的高校毕业生，可凭相关证明到五通桥区公共就业人才服务中心申请档案存放。
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4>关于我们</h4>
+                    <p style="font-size: 14px; line-height: 1.8; margin-bottom: 20px;">
+                        五通桥人才服务网是乐山市五通桥区人力资源和社会保障局主办的官方网站，致力于为区域内企业和求职者提供便捷、高效、权威的人才交流服务。
+                    </p>
+                </div>
+                <div class="footer-col">
+                    <h4>快速导航</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">企业招聘</a></li>
+                        <li><a href="#">个人求职</a></li>
+                        <li><a href="#">事业单位</a></li>
+                        <li><a href="#">人才政策</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>服务项目</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">档案管理</a></li>
+                        <li><a href="#">技能培训</a></li>
+                        <li><a href="#">就业见习</a></li>
+                        <li><a href="#">人才评价</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>联系方式</h4>
+                    <ul class="contact-info">
+                        <li>
+                            <span>📍</span>
+                            <span>地址：四川省乐山市五通桥区桥沟镇桐子坳路50号<br>五通桥区人力资源和社会保障局</span>
+                        </li>
+                        <li>
+                            <span>📞</span>
+                            <span>电话：0833-12333</span>
+                        </li>
+                        <li>
+                            <span>📧</span>
+                            <span>邮箱：wttqrc@163.com</span>
+                        </li>
+                        <li>
+                            <span>⏰</span>
+                            <span>工作时间：周一至周五 8:30-12:00, 14:00-17:30</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 五通桥人才服务网 版权所有 | 互联网ICP备案号：蜀ICP备XXXXXXXX号</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Simple FAQ Toggle Logic
+        document.querySelectorAll('.faq-question').forEach(item => {
+            item.addEventListener('click', () => {
+                const parent = item.parentElement;
+                const isActive = parent.classList.contains('active');
+                
+                // Close all other FAQs
+                document.querySelectorAll('.faq-item').forEach(child => {
+                    child.classList.remove('active');
+                });
+
+                // Toggle current
+                if (!isActive) {
+                    parent.classList.add('active');
+                }
+            });
+        });
+
+        // Search Tab Switching
+        document.querySelectorAll('.search-tab').forEach(tab => {
+            tab.addEventListener('click', () => {
+                document.querySelectorAll('.search-tab').forEach(t => t.classList.remove('active'));
+                tab.classList.add('active');
+            });
+        });
+
+        // Form Submission Simulation
+        document.getElementById('searchForm').addEventListener('submit', (e) => {
+            e.preventDefault();
+            const btn = e.target.querySelector('button');
+            const originalText = btn.innerText;
+            btn.innerText = '搜索中...';
+            btn.disabled = true;
+            
+            setTimeout(() => {
+                btn.innerText = originalText;
+                btn.disabled = false;
+                alert('搜索功能演示：正在为您查找相关职位...');
+            }, 800);
+        });
+    </script>
+</body>
+                          </html>
