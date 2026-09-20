@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="盖达尔 - 俄罗斯著名儿童文学作家与政治家，代表作《铁木尔和他的队伍》、《远方》等。本站收录其生平简介、经典作品赏析及文学成就介绍。">
+    <meta name="keywords" content="盖达尔, 俄罗斯文学, 儿童文学, 铁木尔和他的队伍, 远方, 阿达克, 俄罗斯作家">
+    <title>盖达尔 - 俄罗斯儿童文学巨匠与经典作品赏析</title>
+    <script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --accent-color: #c0392b;
+            --bg-color: #f9f9f9;
+            --card-bg: #ffffff;
+            --text-main: #333333;
+            --text-secondary: #666666;
+            --border-color: #e0e0e0;
+            --spacing-unit: 16px;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+            line-height: 1.6;
+            color: var(--text-main);
+            background-color: var(--bg-color);
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+            transition: color 0.3s ease;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        /* Header */
+        header {
+            background-color: var(--card-bg);
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .header-inner {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 var(--spacing-unit);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 70px;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: var(--primary-color);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .logo span {
+            color: var(--accent-color);
+        }
+
+        nav ul {
+            display: flex;
+            gap: 20px;
+        }
+
+        nav a {
+            font-weight: 500;
+            color: var(--text-main);
+        }
+
+        nav a:hover, nav a.active {
+            color: var(--accent-color);
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, var(--primary-color) 0%, #4a69bd 100%);
+            color: white;
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            letter-spacing: 1px;
+        }
+
+        .hero p {
+            font-size: 1.1rem;
+            max-width: 700px;
+            margin: 0 auto;
+            opacity: 0.9;
+        }
+
+        /* Main Container */
+        .container {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 0 var(--spacing-unit);
+            display: grid;
+            grid-template-columns: 3fr 1fr;
+            gap: 40px;
+        }
+
+        /* Content Section */
+        .content-area {
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+        }
+
+        /* Biography Card */
+        .bio-card {
+            background: var(--card-bg);
+            border-radius: 8px;
+            padding: 30px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+        }
+
+        .bio-card h2 {
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+            border-left: 5px solid var(--accent-color);
+            padding-left: 15px;
+            color: var(--primary-color);
+        }
+
+        .bio-content p {
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+
+        .bio-highlight {
+            background-color: #f0f4f8;
+            border-left: 4px solid var(--accent-color);
+            padding: 20px;
+            margin: 20px 0;
+            font-style: italic;
+        }
+
+        /* Works Grid */
+        .works-section {
+            background: var(--card-bg);
+            border-radius: 8px;
+            padding: 30px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+        }
+
+        .works-section h2 {
+            font-size: 1.8rem;
+            margin-bottom: 25px;
+            color: var(--primary-color);
+            text-align: center;
+        }
+
+        .works-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 20px;
+        }
+
+        .work-item {
+            border: 1px solid var(--border-color);
+            border-radius: 6px;
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .work-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+
+        .work-img-placeholder {
+            width: 100%;
+            height: 160px;
+            background-color: #ddd;
+            object-fit: cover;
+        }
+
+        .work-info {
+            padding: 15px;
+        }
+
+        .work-info h3 {
+            font-size: 1.2rem;
+            margin-bottom: 8px;
+            color: var(--primary-color);
+        }
+
+        .work-info p {
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+        }
+
+        /* Sidebar */
+        aside {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+        }
+
+        .sidebar-widget {
+            background: var(--card-bg);
+            border-radius: 8px;
+            padding: 25px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+        }
+
+        .sidebar-widget h3 {
+            font-size: 1.3rem;
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid var(--border-color);
+            color: var(--primary-color);
+        }
+
+        .quote-list li {
+            margin-bottom: 15px;
+            font-size: 0.95rem;
+            color: var(--text-secondary);
+            position: relative;
+            padding-left: 20px;
+        }
+
+        .quote-list li::before {
+            content: "“";
+            position: absolute;
+            left: 0;
+            top: -5px;
+            font-size: 1.5rem;
+            color: var(--accent-color);
+            font-family: serif;
+        }
+
+        .tag-cloud {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        .tag {
+            background-color: #ecf0f1;
+            color: var(--primary-color);
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            transition: background 0.3s;
+        }
+
+        .tag:hover {
+            background-color: var(--primary-color);
+            color: white;
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 40px 20px;
+            margin-top: 60px;
+            text-align: center;
+        }
+
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .footer-section {
+            flex: 1;
+            min-width: 200px;
+        }
+
+        .footer-section h4 {
+            margin-bottom: 15px;
+            color: #bdc3c7;
+        }
+
+        .footer-section p, .footer-section a {
+            color: #ecf0f1;
+            font-size: 0.9rem;
+            margin-bottom: 8px;
+            display: block;
+        }
+
+        .footer-section a:hover {
+            color: white;
+            text-decoration: underline;
+        }
+
+        .copyright {
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            font-size: 0.85rem;
+            color: #7f8c8d;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .container {
+                grid-template-columns: 1fr;
+            }
+            
+            .header-inner {
+                flex-direction: column;
+                height: auto;
+                padding: 15px;
+            }
+
+            nav ul {
+                margin-top: 15px;
+                gap: 15px;
+                font-size: 0.9rem;
+            }
+
+            .hero h1 {
+                font-size: 1.8rem;
+            }
+
+            .bio-highlight {
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="header-inner">
+            <div class="logo">
+                <span>盖达尔</span> Library
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#home" class="active">首页</a></li>
+                    <li><a href="#works">作品集</a></li>
+                    <li><a href="#biography">生平</a></li>
+                    <li><a href="#about">关于</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero" id="home">
+        <h1>盖达尔</h1>
+        <p>俄罗斯著名儿童文学作家、政治家。他的作品如《铁木尔和他的队伍》和《远方》激励了无数读者，是苏联儿童文学的奠基人之一。</p>
+    </section>
+
+    <div class="container">
+        <!-- Main Content -->
+        <main class="content-area">
+            
+            <!-- Biography Section -->
+            <article class="bio-card" id="biography">
+                <h2>生平与贡献</h2>
+                <div class="bio-content">
+                    <p>阿列克谢·托尔斯泰（Алексей Толстой），笔名阿达克（Гайдар），是苏联时期极具影响力的儿童文学作家。他于1904年出生于俄国，早年在革命中表现出色，并在卫国战争期间作为战地记者和军事记者英勇作战，最终在1941年因车祸不幸去世，年仅37岁。</p>
+                    
+                    <div class="bio-highlight">
+                        <strong>文学风格：</strong>盖达尔的创作风格朴实、真诚，善于塑造充满理想主义色彩的英雄少年形象。他的作品不仅语言生动，更蕴含着对祖国深沉的爱和对正义的执着追求。
+                    </div>
+
+                    <p>他的作品常以战争、革命和少年成长为主题，深刻反映了那个时代的社会变迁与精神风貌。除了文学创作，盖达尔在政治上也担任过重要职务，是苏联人民委员会主席团成员。</p>
+                    <p>在中国，盖达尔的作品拥有极高的知名度，他的故事是许多中国读者接触苏联文学的第一扇窗。</p>
+                </div>
+            </article>
+
+            <!-- Works Section -->
+            <section class="works-section" id="works">
+                <h2>经典作品赏析</h2>
+                <div class="works-grid">
+                    <!-- Work 1 -->
+                    <article class="work-item">
+                        <img src="https://picsum.photos/seed/tyumur/400/250" alt="铁木尔和他的队伍封面示意" class="work-img-placeholder">
+                        <div class="work-info">
+                            <h3>铁木尔和他的队伍</h3>
+                            <p>盖达尔最脍炙人口的代表作之一。讲述了少年铁木尔带领一群孩子与白匪军斗智斗勇的故事，展现了儿童的勇敢与智慧。</p>
+                        </div>
+                    </article>
+
+                    <!-- Work 2 -->
+                    <article class="work-item">
+                        <img src="https://picsum.photos/seed/distant/400/250" alt="远方封面示意" class="work-img-placeholder">
+                        <div class="work-info">
+                            <h3>远方</h3>
+                            <p>描写了主人公在战火纷飞的年代中，为了寻找失散的亲人而踏上艰难旅程的感人故事，充满了对和平与亲情的渴望。</p>
+                        </div>
+                    </article>
+
+                    <!-- Work 3 -->
+                    <article class="work-item">
+                        <img src="https://picsum.photos/seed/adak/400/250" alt="军事秘密封面示意" class="work-img-placeholder">
+                        <div class="work-info">
+                            <h3>军事秘密</h3>
+                            <p>通过一个关于保护军事机密的小故事，揭示了战争时期的紧张氛围以及主人公为了国家利益而保守秘密的坚定信念。</p>
+                        </div>
+                    </article>
+
+                    <!-- Work 4 -->
+                    <article class="work-item">
+                        <img src="https://picsum.photos/seed/encounter/400/250" alt="遭遇封面示意" class="work-img-placeholder">
+                        <div class="work-info">
+                            <h3>遭遇</h3>
+                            <p>一部描写战地生活的短篇小说，以细腻的笔触刻画了前线士兵的日常生活与内心世界，情感真挚动人。</p>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+        </main>
+
+        <!-- Sidebar -->
+        <aside>
+            <div class="sidebar-widget">
+                <h3>名言警句</h3>
+                <ul class="quote-list">
+                    <li>“只有为理想而奋斗，生命才有价值。”</li>
+                    <li>“真正的勇敢不是不害怕，而是尽管害怕，却依然前行。”</li>
+                    <li>“生活就是斗争，就是不断克服困难。”</li>
+                </ul>
+            </div>
+
+            <div class="sidebar-widget">
+                <h3>相关标签</h3>
+                <div class="tag-cloud">
+                    <a href="#" class="tag">苏联文学</a>
+                    <a href="#" class="tag">儿童文学</a>
+                    <a href="#" class="tag">红色经典</a>
+                    <a href="#" class="tag">爱国主义</a>
+                    <a href="#" class="tag">战争文学</a>
+                    <a href="#" class="tag">阿达克</a>
+                </div>
+            </div>
+
+            <div class="sidebar-widget">
+                <h3>阅读指南</h3>
+                <p style="font-size: 0.9rem; color: #666; margin-bottom: 10px;">
+                    推荐按年龄层阅读：小学低年级可从《遭遇》等短篇开始，高年级及成人推荐阅读《铁木尔和他的队伍》与《远方》。
+                </p>
+                <a href="#" style="color: var(--accent-color); font-weight: bold; font-size: 0.9rem;">查看完整书单 &rarr;</a>
+            </div>
+        </aside>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>关于盖达尔</h4>
+                <p>致力于传播俄罗斯经典儿童文学，纪念这位伟大的作家。</p>
+            </div>
+            <div class="footer-section">
+                <h4>快速链接</h4>
+                <a href="#biography">生平简介</a>
+                <a href="#works">作品列表</a>
+                <a href="#">联系编辑</a>
+            </div>
+            <div class="footer-section">
+                <h4>资源</h4>
+                <a href="#">在线阅读</a>
+                <a href="#">PDF下载</a>
+                <a href="#">研究资料</a>
+            </div>
+        </div>
+        <div class="copyright">
+            &copy; 2023 盖达尔文学纪念馆. All Rights Reserved.
+        </div>
+    </footer>
+
+</body>
+</html>
